@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Many Forms Types</title>
+    <style>
+        body{
+            
+            padding: 0;
+            background-color:rgb(0, 180, 180);
+        }
+        .input-name{
+            margin-top: 25px;
+            margin-bottom: 0;
+            color: rgb(255, 255, 255);
+            font-style: bold;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .input-holder{
+            margin-top: 10px;
+            font-style: bold;
+            color: black;
+            background-color: rgb(0, 161, 161);
+        }
+        label{
+            cursor: pointer;
+        }
+        #in_nome{
+        
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>My Forms</h1>
+    <form action = "#" method = "get" target = "_blank" autocomplete = "off">
+        <p class = "input-name">Text-INPUT</p>
+        <p class="input-holder">
+            <label for="in_nome">Seu Nome</label>
+            <input type="text" name = "nome" id="in_nome" placeholder="Type your name" autocomplete="off" value="Railton Rosa de Carvalho" required>
+        
+        <p class = "input-name">Check-INPUT</p>
+        <p class="input-holder">
+            Your Status <br>
+            <label for="jun">Junior</label>
+            <input type="checkbox" name = "in-jun" id="jun" value="jun" checked >
+            <label for="sen">Senior</label>
+            <input type="checkbox" name = "in-sen" id="sen" value="sen" >
+            <label for="ple">Pleno</label>
+            <input type="checkbox" name = "in-ple" id="ple" value="ple" >
+        </p>
+
+        <p class = "input-name">Radio-INPUT</p>
+        <p class="input-holder">
+            Gender <br>
+            <label for="masc">Masculine</label>
+            <input type="radio" name = "check-gender" id="masc" value="mas" checked>
+
+            <label for="femi">Feminine</label>
+            <input type="radio" name = "check-gender" id="femi" value="fem" >
+            
+            <label for="bina">Binare</label>
+            <input type="radio" name = "check-gender" id="bina" value="bin" >
+        </p>
+        
+        <p class = "input-name">Date-INPUT</p>
+        <p class="input-holder">
+            <label for="date">Birth-Date</label>
+            <input type="date" name = "date" id="date" value = "2001-12-18" required>
+            
+        <p class = "input-name">DateTime-INPUT</p>
+        <p class="input-holder">
+            <label for="datetime">Bith-Day accuracy</label>
+            <input type="datetime-local" name = "datetime" id="datetime" value = "2001-12-18T14:00" required>
+            
+        <p class = "input-name">DateTime-INPUT</p>
+        <p class="input-holder">
+            <label for="time">Time</label>
+            <input type="time" name = "time" id="time" value = "14:20:18" required>
+    
+        <p class = "input-name">Color-INPUT</p>
+            <p class="input-holder">
+            <label for="color">Favorite Color</label>
+            <input type="color" name = "color" id="color"  value= "#b3f0ff" required>
+        </p>
+        
+        <p class = "input-name">Email-INPUT</p>
+            <p class="input-holder">
+            <label for="email">Email</label>
+            <input type="email" name = "email" id="email"  placeholder="type your email" >
+        </p>
+        
+        <p class = "input-name">File-INPUT</p>
+            <p class="input-holder">
+            <label for="file">Escolha um arquivo:</label>
+            <input type="file" name = "file" id="file" accept=".png,.mp4,image/*" multiple>
+        </p>
+
+        <p class = "input-name">Number-INPUT</p>
+        <p class="input-holder">
+            <label for="number">Number:</label>
+            <input type="number" name = "number" id="number" placeholder="type a number" 
+            min="1000" max="9999" step="5" required>
+        </p>
+        
+        <p class = "input-name">Password-INPUT</p>
+            <p class="input-holder">
+            <label for="password">password:</label>
+            <input type="password" name = "password" id="password" placeholder="type a password" required>
+        </p>
+        
+        <p class = "input-name">Range-INPUT</p>
+        <p class="input-holder">
+            <label for="range">Soft-Skills:</label>
+            <input type="range" name = "range" id="range" list="tickmarks" required>
+            
+          
+            <datalist id="tickmarks">
+                <option value="0" label="0%">
+                <option value="10">
+                <option value="20">
+                <option value="30">
+                <option value="40">
+                <option value="50" label="50%">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="90">
+                <option value="100" label="100%">
+            </datalist>
+        </p>
+
+        <p class = "input-name">Url-INPUT</p>
+            <p class="input-holder">
+            <label for="url">URL: </label>
+            <input type="url" name = "url" id="url"  placeholder="type your url" >
+        </p>
+       
+        <!--Tipo search é semãntico-->
+        <p class = "input-name">Search-INPUT</p>
+            <p class="input-holder">
+            <label for="search">Search: </label>
+            <input type="search" name = "search" id="search"  placeholder="type your url" >
+        </p>
+        
+        <p class="input-name">Select-INPUT</p>
+            <p class = "input-holder">
+                <label for="select">Select your Language</label>
+                <select name="select" id="select" required>
+                    <optgroup label="High-level"> <!--OPTGROUP usado para agrupar opções-->
+                        <option value="10">Java</option>
+                        <option value="20">Kotlin</option>
+                        <option value="30" selected>Python</option>
+                        
+                        <option value="40" disabled>C++</option>
+                    </optgroup>
+                </select>
+            </p>
+        
+        <p class="input-name">TextArea-INPUT</p>
+        <p class = "input-holder">
+            <label for="textarea">Paste your code HERE:</label>
+            <textarea name="textarea" id="textarea" cols="35" rows="6" placeholder="your code in java,javascript or python"></textarea>
+
+
+        </p> 
+
+        <p>
+            <button type="reset">Resetar</button>
+            <button type="submit">Enviar</button>
+        </p>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    margin: 5px 3px;
+    border: solid 3px black;
+}
+
+label{
+    margin-left: 40%;
+    font-size:20px;
+    font-family: monospace;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* .father .son+p{
+    color: rgb(123, 0, 255);
+}
+.father .son~p{
+    color: rgb(2, 255, 179);
+} */
+
+
+/* seleção por especibilidade */
+.father .son{
+    color: rgb(156, 3, 3);
+}
+
+.father.son{
+    color: aqua;
+}
+
+/* seleção por determinada atributo no geral */
+[meu-attr]{
+    color: rgb(0, 112, 20);
+}
+
+/* seleção por determinada atributo com valor especifico */
+[meu-attr="value"]{
+    color: brown;
+}
+/* 
+    para atributos temos os seletores começa com (^=) e o termina com ($=) ou seja eles pegam os prefixo e o sufixo do attr.Temos tbm o contem ou in (*=). 
+*/

@@ -1,0 +1,36 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    align-content: space-around;
+    background-color: antiquewhite;
+    height: 500px;
+    flex-wrap: wrap;
+}
+.flex-item{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50PX;
+    background-color: aquamarine;
+    border: solid 2px black;
+    border-radius: 5px;
+    flex-grow: 0; /* permitir que o elemento cresça */
+    flex-basis: 100px; /* antes de dividir o espaço ,cada elemento terá esse tamanho ocupado */
+    flex-shrink: 1; /* permitir que o elemento diminua */
+
+    /* flex: 1 1 100px; atalho para grow ,shrink e basis respectivamente */
+}
+
+.flex-item:nth-child(1),.flex-item:nth-child(5){
+    color: aliceblue;
+}

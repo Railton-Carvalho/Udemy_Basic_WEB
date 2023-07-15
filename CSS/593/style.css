@@ -1,0 +1,64 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+body{
+    background-color:rgb(95, 0, 0);
+}
+.f1{
+    display: flex;
+    background-color: rgb(60, 0, 0);
+    justify-content: center;
+    padding: 0 20px;
+}
+f1 input{
+    border: none;
+}
+button{
+    border: 0;
+    background-color: rgb(62, 0, 0)
+}
+button .buttomtext{
+    color: aliceblue;
+    font-family: serif;
+}
+
+.texto1{
+    box-sizing: border-box; /*soma o tamanho do padding ,da borda ao conteudo ou seja nunca vai passar de um width de 100px por exemplo*/
+    margin-top: 15px;
+    color:aliceblue;
+    display: block;
+    background-color: brown;
+    width: 100%;
+    height: 200px;
+
+    max-width: 900px;
+    max-height: 100%;
+
+    margin: 0 auto;
+    overflow-y: auto;
+    padding: 70px;
+    border: double 4px black;
+
+}
+.container{
+    background-color: rgb(113, 0, 0);
+    
+}
+.grid::after{
+    content: "";
+    display:block;
+    clear:both;
+}
+.grid .col{
+    background-color: rgb(148, 30, 0);
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    float: left;
+
+}

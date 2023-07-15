@@ -1,0 +1,124 @@
+
+
+*{
+    margin: 0;
+    padding: 0;   
+}
+h1{
+    transition: all 310ms ease-in-out;
+
+}
+h1:hover {
+    font-family: sans-serif;
+    background-color:firebrick;
+    color: white;
+}
+
+/* 
+   TRANSITION usado para mostrar transições durante mudanças de stilos de alguns itens 
+*/
+a{
+    transition: all 260ms ease-in-out;
+}
+
+a:link{
+    color:darkgreen;
+}
+a:visited{
+    color: darkorange;
+}
+a:hover{
+    background-color: forestgreen;
+    color: rgb(255, 251, 0);
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 0 0 5px rgba(255, 1, 1, 0.5);
+}
+/* 
+    ACTIVE- quando o obejeto está clicavel ou seja (seleciono e seguro em cima dele )
+ */
+a:active{
+    background-color: rgb(0, 0, 100);
+    color: rgb(255, 254, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+input:focus,button:focus{
+    
+    box-shadow: 0 0 5px rgba(25, 126, 149, 0.5);
+    outline: none;
+    border: 1px solid rgb(0, 187, 255);
+}
+
+input:disabled{
+
+    background-color:brown;
+    cursor:not-allowed;
+}
+
+body{
+    margin-left: 10px;
+}
+section ul li{
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+.c589 li:nth-child(odd){
+    background-color:aqua;
+
+}
+.c589 li:nth-child(even){
+    background-color:rgb(0, 255, 21);
+
+}
+
+/* 
+    o 3n diz quantas item tem q pular pra aplicar e o +3 diz de onde essa regra começa a valer 
+*/
+.c589 li:nth-child(3n+3){
+    background-color:rgb(0, 1, 52);
+    color: aliceblue;
+
+}
+
+.c590 ul li::after{
+    content: "==> ";
+    background-color: rgb(10, 56, 41);
+    color: white;
+    display: block;
+}
+
+.c590 .elements::first-letter{
+    font-size: 50px;
+    display:block;
+    float: left;
+    margin: 0 10px 10px 0;
+
+}
+.c590 .elements::first-line{
+    background-color: chocolate;
+}
+
+.c590 .elements::selection{
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+
+.c590 input::placeholder{
+   font-size: 18px;
+    color: rgb(241, 80, 80);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* 
+Usamos esse para mudar todos os places holders no html
+    ::placeholder{
+    font-size: 18px;
+     color: rgb(241, 80, 80);
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+  */
+

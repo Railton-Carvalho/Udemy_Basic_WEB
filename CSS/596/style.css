@@ -1,0 +1,27 @@
+
+
+html{
+    font-size: 20px;
+
+}
+body{
+   /*  background: darkblue; */
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+/*     text-decoration: underline; */
+    font-style: italic;
+    text-indent: 20px;
+    text-shadow: -1px -0.1px rgb(255, 41, 41);
+    text-transform: uppercase;
+
+}
+
+div{
+   /*  background-color:rgb(2, 2, 201); */
+}

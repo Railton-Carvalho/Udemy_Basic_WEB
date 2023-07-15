@@ -1,0 +1,116 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/7cee2527-d2cc-4cc9-99f6-d1375e72d46e/464f74e4-ad4d-4357-9c7e-96312b13196b/BR-pt-20230103-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+background-size: cover;
+
+}
+
+.up-menu{
+    display: flex;
+    margin: 0px;
+    background-color: rgba(39, 39, 39, 0.85);
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logonet{
+    height: 100px;
+    padding-left:30px;
+}
+.menu{
+    background-color: rgb(255, 4, 4);
+    margin-right: 25px;
+    width: 80px;
+    height: 50px;
+    padding: 0;
+    color: white;
+
+}
+.pag-main{
+    display: block;
+    margin-top: 0;
+    padding: 10% 0;
+    text-align: center;
+    background-color: rgba(41, 41, 41, 0.45);
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    line-height: 0.8;
+}
+.text1{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    font-size: 50px;
+    line-height: 1.1;
+}
+.text2{
+    margin-top: 15px;
+    color:antiquewhite;
+    font-size: 35px;}
+
+.opnav,input{
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul{
+    color: red;
+    list-style: none;
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    margin: 0 20px;
+    
+    padding: 10px 0; 
+    color: red;
+    font-family: sans-serif;
+    font-size:35px;
+    font-weight: bold;
+}
+nav a:hover{
+    background-color:rgba(50, 50, 50, 0.85);
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+form{
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+
+form div {
+    display: flex;
+    width: 30%;
+    height: 50px;
+}
+
+form div input:focus{
+     box-shadow: 0 0 25px rgba(255, 43, 43, 0.5);
+     font-size: 27px;
+     border: solid 2px firebrick;
+}
+form div input{
+    padding: 10p;
+    font-size: 25px;
+    width: 100%;   
+    outline: none;
+    border:0;
+}
+    
+button{
+    background-color: red;
+    color: wheat;
+    font-size: 22px;
+    padding: 10px;
+    border: 0;
+    font-family: sans-serif;
+    outline: none;
+}

@@ -1,0 +1,32 @@
+
+
+body{
+    margin: 0;
+}
+.pai{
+
+}
+.filha1, .filha2{
+    width: 200px;
+    height: 200px;
+    background-color:aqua;
+    position:static;
+}
+
+.filha1{
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    left: 50%;
+
+
+    background-color: rgba(0, 255, 255, 0.644);
+    z-index: 2;
+}
+.filha2{
+    position: relative;
+    background-color: coral;
+    z-index: -1;
+   
+}
